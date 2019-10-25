@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SMART SECURITY LIGHTS </string>
+    <string name="face"> protecting you </string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="sett">SET</string>
+</resources>
