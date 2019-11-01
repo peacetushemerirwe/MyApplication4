@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_main);
         //setContentView(R.layout.layout_main);
+       // startActivity(new Intent(MainActivity.this, Blu2.class));
+        startActivity(new Intent(MainActivity.this, Blu.class));
 
         Button set;
         set = findViewById(R.id.set);
@@ -26,21 +28,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Smart.class));
             }
         });
-        //Button on;
-        //on=findViewById(R.id.on);
-        Button off;
-        off=findViewById(R.id.off);
+        Button On;
+        On=findViewById(R.id.on1);
+        Button Off;
+        Off=findViewById(R.id.off1);
 
-        //on.setOnClickListener(new View.OnClickListener() {
-           // @Override
-           // public void onClick(View view) {
-               // recreate();
-           // }
-        //});
-        off.setOnClickListener(new View.OnClickListener() {
+        On.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 recreate();
+           }
+        });
+        Off.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               recreate();
             }
         });
     }
